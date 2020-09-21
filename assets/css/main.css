@@ -311,7 +311,7 @@
 }
 
 .header__mobile-search-icon {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     color: var(--white-color);
 }
 
@@ -869,6 +869,7 @@
     /* Bỏ background khi click hiện màu trong suốt*/
     -webkit-tap-highlight-color: transparent;
     padding: 0 6px;
+    cursor: pointer;
 }
 
 /* Home sort + filter */
@@ -1199,4 +1200,69 @@ i.home-product-item__like-icon-fill {
 .footer__download-app-link {
     color: transparent;
     text-decoration: none;
+}
+
+/* Mobile nav */
+.nav__bars-btn {
+    font-size: 2.4rem;
+    color: var(--white-color);
+    display: none;
+}
+
+.nav__input:checked ~ .nav__overlay {
+    display: block;
+}
+
+.nav__input:checked ~ .nav__mobile {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.nav__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.3);
+    z-index: 1;
+    display: none;
+    animation: fadeIn linear 0.2s;
+}
+
+.nav__mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    background-color: var(--white-color);
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform linear 0.2s;
+    z-index: 1;
+}
+
+.nav__mobile-list {
+    margin-top: 24px;
+    list-style: none;
+}   
+.nav__mobile-item-link {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px 0;
+    font-size: 1.4rem;
+}
+.nav__mobile-user-menu {
+    list-style: none;
+}
+
+.nav__mobile-close {
+    font-size: 28px;
+    color: #666;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
 }

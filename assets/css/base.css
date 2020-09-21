@@ -23,6 +23,12 @@ html{
     box-sizing: border-box;
 }
 
+/* Center */
+.self-center {
+    display: flex;
+    align-self: center;
+}
+
 /* Responsive */
 .grid__row{
     display: flex;
