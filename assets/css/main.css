@@ -307,6 +307,7 @@
 
 .header__mobile-search {
     padding: 0 12px;
+    display: none;
 }
 
 .header__mobile-search-icon {
@@ -815,7 +816,7 @@
 
 /* Mobile category */
 .mobile-category {
-
+    display: none;
 }
 
 .mobile-category__list {
@@ -867,6 +868,7 @@
     -webkit-user-select: none;
     /* Bỏ background khi click hiện màu trong suốt*/
     -webkit-tap-highlight-color: transparent;
+    padding: 0 6px;
 }
 
 /* Home sort + filter */
@@ -1147,8 +1149,9 @@ i.home-product-item__like-icon-fill {
 
 /* Footer */
 .footer {
-    padding: 16px;
+    padding-top: 16px;
     border-top: 4px solid var(--primary-color);
+    background-color: var(--white-color);
 }
 
 .footer__heading {
@@ -1191,4 +1194,9 @@ i.home-product-item__like-icon-fill {
     text-align: center;
     font-size: 1.2rem;
     color: #737373;
+}
+
+.footer__download-app-link {
+    color: transparent;
+    text-decoration: none;
 }
