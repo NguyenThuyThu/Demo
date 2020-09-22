@@ -324,6 +324,7 @@
     text-decoration: none;
     display: block;
     line-height: 0;
+    padding: 15px 15px 15px 0;
 }
 
 .header__logo-img{
@@ -1245,9 +1246,19 @@ i.home-product-item__like-icon-fill {
 }
 
 .nav__mobile-list {
-    margin-top: 24px;
+    margin-top: 40px;
+    padding: 0;
     list-style: none;
-}   
+}  
+.nav__mobile-user-item {
+    border-bottom: 1px solid #e1e1e1;
+    padding: 5px 15px;
+}
+.nav__mobile-user-item > a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.2rem;
+} 
 .nav__mobile-item-link {
     text-decoration: none;
     color: #333;
